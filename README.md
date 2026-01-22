@@ -1,24 +1,26 @@
-Bitcoin Macro-Forecasting System (VAR v16)
-A quantitative model exploring the relationship between global liquidity and Bitcoin price action.
+🚀 Bitcoin Macro-Forecasting System (VAR v16)
+A quantitative framework exploring global liquidity regimes and Bitcoin price action.
 
 🧩 Investment Thesis
-This project tests the theory that Bitcoin price movements are significantly influenced by Federal Reserve policy and money supply. By using M2 Money Stock and Fed Funds Rates as exogenous variables, the model seeks to identify "liquidity regimes" that drive crypto volatility.
+This project tests the hypothesis that Bitcoin is a "liquidity barometer" sensitive to Federal Reserve policy. By integrating M2 Money Stock and Fed Funds Rates as exogenous drivers, the model identifies specific liquidity regimes that precede high-volatility events.
 
 🧬 The "Bio-Quant" Bridge
-As a Biomolecular Engineering and Bioinformatics graduate (UCSC '24), I apply the same rigorous data-cleaning and stochastic modeling techniques used in genomic sequencing to high-volatility financial datasets. This "v16" framework treats market data with the same precision required for RNA-seq analysis.
+As a Biomolecular Engineering & Bioinformatics graduate (UCSC '24), I translate high-precision data techniques from genomics—such as RNA-seq normalization and stochastic modeling—into the financial domain. I treat market noise with the same scientific rigor required for gene sequence analysis.
 
 🛠️ Tech Stack & Methodology
-Language: Python.
+Language: Python (Pandas, NumPy, Statsmodels).
 
-Statistical Model: Vector Autoregression (VAR) with walk-forward validation.
+Architecture: Vector Autoregression (VAR) with expanding-window walk-forward validation to eliminate look-ahead bias.
 
-Techniques: LSTM for time-series forecasting, Random Forest for feature selection, and Bootstrap Residual Resampling for confidence intervals.
+Machine Learning: Random Forest for feature selection and LSTM for non-linear residual analysis.
 
-Logic: An expanding training window is used to prevent "look-ahead bias," ensuring the backtest simulates real-world conditions.
+Robustness: Bootstrap Residual Resampling is used to generate probabilistic price bands (P10/P50/P90) rather than fixed-point guesses.
 
-📈 Results & Performance
-Accuracy: achieved ~85% simulated accuracy in predicting market-relevant Federal Reserve decisions.
+📈 Results & Evaluation (The "Proof of Work")
+The following outputs in the /results folder validate the model's performance:
 
-Confidence Bands: The model generates P10/P50/P90 price trajectories, allowing for probabilistic risk assessment.
+var_forecast_v16.csv (Probabilistic Forecasting): Provides a 12-month trajectory using quantile bands. This demonstrates a professional approach to Risk Management.
 
-Horizon Quality: Current backtests show high confidence ("Green" status) for short-term horizons, with MAPE values under 10%.
+var_horizon_quality_v16.csv (Model Reliability): Automatically labels horizons as Green, Yellow, or Red based on MAPE. This "honesty report" shows when the model is actionable versus when the market is too noisy.
+
+var_walkforward_v16.csv (Strategic Alpha): This backtest proves that adding M2 Money Supply significantly improves prediction accuracy over a standard univariate baseline.
