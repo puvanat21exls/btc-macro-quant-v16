@@ -8,6 +8,7 @@ This project tests the hypothesis that Bitcoin is a "liquidity barometer" sensit
 As a Biomolecular Engineering & Bioinformatics graduate (UCSC '24), I translate high-precision data techniques from genomics—such as RNA-seq normalization and stochastic modeling—into the financial domain. I treat market noise with the same scientific rigor required for gene sequence analysis.
 
 🛠️ Tech Stack & Methodology
+
 Language: Python (Pandas, NumPy, Statsmodels).
 
 Architecture: Vector Autoregression (VAR) with expanding-window walk-forward validation to eliminate look-ahead bias.
