@@ -25,3 +25,9 @@ var_forecast_v16.csv (Probabilistic Forecasting): Provides a 12-month trajectory
 var_horizon_quality_v16.csv (Model Reliability): Automatically labels horizons as Green, Yellow, or Red based on MAPE. This "honesty report" shows when the model is actionable versus when the market is too noisy.
 
 var_walkforward_v16.csv (Strategic Alpha): This backtest proves that adding M2 Money Supply significantly improves prediction accuracy over a standard univariate baseline.
+### 📈 Visual Results
+#### 12-Month BTC Price Forecast (v16)
+![BTC Forecast with Confidence Bands](results/var_forecast_v16.png)
+
+* **P10/P50/P90 trajectories** allow for probabilistic risk assessment.
+* The chart highlights the **Effective Horizon** (1–X months) where the model shows strong/usable confidence.
